@@ -1,14 +1,23 @@
-A city map printing module for [inkifi.com](https://inkifi.com) (Magento 2).  
+A custom module for [julio.com](https://julio.com) (Magento 2).  
 
 ## How to install
 ```
 bin/magento maintenance:enable
 rm -rf composer.lock
 composer clear-cache
-composer require inkifi/map:*
+composer require julio.com/core:*
 bin/magento setup:upgrade
-rm -rf var/di var/generation generated/code && bin/magento setup:di:compile
-rm -rf pub/static/* && bin/magento setup:static-content:deploy -f en_US en_GB --area adminhtml --theme Magento/backend && bin/magento setup:static-content:deploy -f en_US en_GB --area frontend --theme Infortis/ultimo
+rm -rf var/di var/generation generated/code
+bin/magento setup:di:compile
+rm -rf pub/static/*
+bin/magento setup:static-content:deploy \
+	--area adminhtml \
+	--theme Magento/backend \
+	-f en_US
+bin/magento setup:static-content:deploy \
+	--area frontend \
+	--theme Mgs/claue \
+	-f en_US
 bin/magento maintenance:disable
 bin/magento cache:enable
 ```
@@ -16,12 +25,22 @@ bin/magento cache:enable
 ## How to upgrade
 ```
 bin/magento maintenance:enable
+composer remove julio.com/core
 rm -rf composer.lock
 composer clear-cache
-composer update inkifi/map
+composer require julio.com/core:*
 bin/magento setup:upgrade
-rm -rf var/di var/generation generated/code && bin/magento setup:di:compile
-rm -rf pub/static/* && bin/magento setup:static-content:deploy -f en_US en_GB --area adminhtml --theme Magento/backend && bin/magento setup:static-content:deploy -f en_US en_GB --area frontend --theme Infortis/ultimo
+rm -rf var/di var/generation generated/code
+bin/magento setup:di:compile
+rm -rf pub/static/*
+bin/magento setup:static-content:deploy \
+	--area adminhtml \
+	--theme Magento/backend \
+	-f en_US
+bin/magento setup:static-content:deploy \
+	--area frontend \
+	--theme Mgs/claue \
+	-f en_US
 bin/magento maintenance:disable
 bin/magento cache:enable
 ```
