@@ -8,7 +8,7 @@
 			<block
 				class='Magento\Framework\View\Element\Template'
 				name='julio.video.small'
-				template='Julio_Core::video/small.phtml'
+				template='Julio_Video::small.phtml'
 			/>
 		</referenceBlock>
 	</body>

@@ -1,9 +1,9 @@
 {
-	"name": "julio.com/core"
-	,"version": "0.0.3"
-	,"description": "A custom module for julio.com (Magento 2)"
+	"name": "julio.com/video"
+	,"version": "0.0.4"
+	,"description": "A product video module for julio.com (Magento 2)"
 	,"type": "magento2-module"
-	,"homepage": "https://github.com/julio-com/core"
+	,"homepage": "https://github.com/julio-com/video"
 	,"license": "MIT"
 	,"authors": [{
 		"name": "Dmitry Fedyuk"
@@ -11,6 +11,6 @@
 		,"homepage": "https://mage2.pro/users/dmitry_fedyuk"
 		,"role": "Developer"
 	}]
-	,"autoload": {"files": ["registration.php"], "psr-4": {"Julio\\Core\\": ""}}
+	,"autoload": {"files": ["registration.php"], "psr-4": {"Julio\\Video\\": ""}}
 	,"keywords": ["Magento 2"]
 }

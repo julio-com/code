@@ -1,11 +1,11 @@
-A custom module for [julio.com](https://julio.com) (Magento 2).  
+A product video module for [julio.com](https://julio.com) (Magento 2).  
 
 ## How to install
 ```
 bin/magento maintenance:enable
 rm -rf composer.lock
 composer clear-cache
-composer require julio.com/core:*
+composer require julio.com/video:*
 bin/magento setup:upgrade
 rm -rf var/di var/generation generated/code
 bin/magento setup:di:compile
@@ -25,7 +25,7 @@ bin/magento cache:enable
 ## How to upgrade
 ```
 bin/magento maintenance:enable
-composer remove julio.com/core
+composer remove julio.com/video
 rm -rf composer.lock
 composer clear-cache
 composer require julio.com/core:*

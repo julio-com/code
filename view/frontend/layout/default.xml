@@ -4,5 +4,5 @@
 	xsi:noNamespaceSchemaLocation='urn:magento:framework:View/Layout/etc/page_configuration.xsd'
 >
 <!-- 2019-07-30 The Claue theme does not load `_module.less` files. -->
-	<head><css src='Julio_Core::main.css'/></head>
+	<head><css src='Julio_Video::main.css'/></head>
 </page>
