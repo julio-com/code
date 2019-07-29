@@ -7,18 +7,18 @@
 		<referenceBlock name='product.detail.info'>
 			<block
 				class='Magento\Framework\View\Element\Template'
-				name='julio.video.1column'
-				template='Julio_Video::1column.phtml'
+				name='julio-video-1column'
+				template='Julio_Video::main.phtml'
 			/>
 			<block
 				class='Magento\Framework\View\Element\Template'
-				name='julio.video.2columns'
-				template='Julio_Video::2columns.phtml'
+				name='julio-video-2columns'
+				template='Julio_Video::main.phtml'
 			/>
 			<block
 				class='Magento\Framework\View\Element\Template'
-				name='julio.video.3columns'
-				template='Julio_Video::3columns.phtml'
+				name='julio-video-3columns'
+				template='Julio_Video::main.phtml'
 			/>
 		</referenceBlock>
 	</body>
