@@ -6,5 +6,10 @@ define(['jquery', 'domReady!'], function($) {return (
  */
 function(c, e) {
 	var $e = $(e);
-	debugger;
+	var $a = $('a', $e);
+	//var $states = $('> div > div', $a);
+	$a.click(function() {
+		$a.toggleClass('jul-active');
+		//$states.toggle();
+	});
 });});

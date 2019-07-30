@@ -44,6 +44,13 @@
 				height: initial;
 				width: initial;
 			}
+			&.jul-active {
+				> div > div {
+					&:nth-of-type(1) {display: none;}
+					&:nth-of-type(2) {display: block;}
+				}
+				> span {border-bottom: 2px solid #2D2D2D; display: inline-block;}
+			}
 			> div {
 				height: 44px;
 				position: relative;
