@@ -44,20 +44,25 @@
 				width: initial;
 			}
 			> div {
-				display: inline-block;
-				float: left;
-				height: 24px;
-				margin-right: 10px;
+				height: 44px;
 				position: relative;
-				width: 24px;
+				width: 68px;
+				@media (max-width: 767px) {
+					display: inline-block;
+					float: left;
+					height: 24px;
+					margin-right: 10px;
+					width: 24px;
+				}
 				> div {
 					background: url('./i/composite.svg') no-repeat;
 					bottom: 0;
 					left: 0;
-					margin: auto 10px;
+					margin: auto;
 					position: absolute;
 					right: 0;
 					top: 0;
+					@media (max-width: 767px) {margin-left: 10px; margin-right: 10px;}
 					&:nth-of-type(1) {
 						background-position: 65.18518518518519% 31.007751937984494%;
 						height: 16px;
@@ -72,10 +77,12 @@
 				}
 			}
 			> span {
-				display: block;
-				float: right;
-				line-height: 24px;
-				margin-left: 10px;
+				@media (max-width: 767px) {
+					display: block;
+					float: right;
+					line-height: 24px;
+					margin-left: 10px;
+				}
 			}
 		}
 	}
