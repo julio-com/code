@@ -28,7 +28,7 @@ bin/magento maintenance:enable
 composer remove julio.com/video
 rm -rf composer.lock
 composer clear-cache
-composer require julio.com/core:*
+composer require julio.com/video:*
 bin/magento setup:upgrade
 rm -rf var/di var/generation generated/code
 bin/magento setup:di:compile
