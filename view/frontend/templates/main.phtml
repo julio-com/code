@@ -1,11 +1,12 @@
 <?php
 use Magento\Catalog\Model\Product as P;
 use Magento\Framework\View\Element\Template;
-	/** @var Template $block */
-	$p = df_product_current(); /** @var P $p */
-	$v = $p['julio__video'];
+/** @var Template $block */
 ?>
-<div class='julio-video <?= $block->getNameInLayout()?>'>
+<div
+	class='df-hidden julio-video <?= $block->getNameInLayout()?>'
+	data-video="<?= $block->escapeHtml(df_product_current()['julio__video']) ?>"
+>
 	<div>
 		<a href='javascript:void(0)'>
 			<div>
@@ -16,4 +17,4 @@ use Magento\Framework\View\Element\Template;
 		</a>
 	</div>
 </div>
-<?= df_js_x('.julio-video', 'Julio_Video');
+<?= df_js_x('div.julio-video', 'Julio_Video');
