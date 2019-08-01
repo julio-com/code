@@ -1,4 +1,10 @@
-<?php /** @var \Magento\Framework\View\Element\Template $block */ ?>
+<?php
+use Magento\Catalog\Model\Product as P;
+use Magento\Framework\View\Element\Template;
+	/** @var Template $block */
+	$p = df_product_current(); /** @var P $p */
+	$v = $p['julio__video'];
+?>
 <div class='julio-video <?= $block->getNameInLayout()?>'>
 	<div>
 		<a href='javascript:void(0)'>
