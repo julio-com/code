@@ -10,7 +10,7 @@ function(c, e) {
 			ran = true;
 			var $g = $('.gallery-list');
 			var $img = $g.children('.product').first();
-			$g.prepend(
+			/*$g.prepend(
 				$('<video>').attr({
 					class: 'jul-video'
 					,controls: true
@@ -20,7 +20,7 @@ function(c, e) {
 					src: 'https://video.asos-media.com/products/ASOS/_media_/fb8/fb83c3ae-8dab-4f98-a0a9-e5eec6661487.mp4'
 					,type: 'video/mp4'
 				}))
-			);
+			);*/
 		}
 	})();
 	(function() {
