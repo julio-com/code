@@ -1,6 +1,6 @@
 {
 	"name": "julio.com/video"
-	,"version": "1.0.0"
+	,"version": "1.0.1"
 	,"description": "A product video module for julio.com (Magento 2)"
 	,"type": "magento2-module"
 	,"homepage": "https://github.com/julio-com/video"
@@ -11,7 +11,7 @@
 		,"homepage": "https://mage2.pro/users/dmitry_fedyuk"
 		,"role": "Developer"
 	}]
-	,"require": {"mage2pro/core": ">=4.9.9"}
+	,"require": {"mage2pro/core": ">=5.0.0"}
 	,"autoload": {"files": ["registration.php"], "psr-4": {"Julio\\Video\\": ""}}
 	,"keywords": ["Magento 2"]
 }
