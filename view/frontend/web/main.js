@@ -10,7 +10,7 @@ function(c, e) {
 	var $a = $('a', $e);
 	var is1Column = $e.hasClass('julio-video-1column');
 	var is2Columns = $e.hasClass('julio-video-2columns');
-	$a.toggleClass('df-hidden', !$e.data('video'));
+	$e.toggleClass('df-hidden', !$e.data('video'));
 	// 2019-08-01 https://www.w3schools.com/howto/howto_js_fullscreen.asp
 	function fs(e) {
 		e.requestFullscreen ? e.requestFullscreen() : (

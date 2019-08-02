@@ -7,16 +7,19 @@ div.julio-video {
 		display: none;
 		@media (max-width: 767px) {
 			background-color: #eee;
-			display: flex;
 			justify-content: space-around;
 			padding: 0;
 			width: 100%;
+			&:not(.df-hidden) {display: flex;}
 		}
 	}
 	&.julio-video-2columns {
-		display: none; @media (min-width: 768px) and (max-width: 1199px) {display: block;}
+		display: none;
+		@media (min-width: 768px) and (max-width: 1199px) {&:not(.df-hidden) {display: block;}}
 	}
-	&.julio-video-3columns {display: none; @media (min-width: 1200px) {display: block;}}
+	&.julio-video-3columns {
+		display: none; @media (min-width: 1200px) {&:not(.df-hidden){display: block;}}
+	}
 	> div {
 		@media (max-width: 767px) {
 			margin: 7px 0;
