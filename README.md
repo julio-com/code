@@ -13,11 +13,11 @@ rm -rf pub/static/*
 bin/magento setup:static-content:deploy \
 	--area adminhtml \
 	--theme Magento/backend \
-	-f en_US
+	-f en_US es_MX
 bin/magento setup:static-content:deploy \
 	--area frontend \
 	--theme Mgs/claue \
-	-f en_US
+	-f en_US es_MX
 bin/magento maintenance:disable
 bin/magento cache:enable
 ```
@@ -36,11 +36,11 @@ rm -rf pub/static/*
 bin/magento setup:static-content:deploy \
 	--area adminhtml \
 	--theme Magento/backend \
-	-f en_US
+	-f en_US es_MX
 bin/magento setup:static-content:deploy \
 	--area frontend \
 	--theme Mgs/claue \
-	-f en_US
+	-f en_US es_MX
 bin/magento maintenance:disable
 bin/magento cache:enable
 ```
